@@ -8,4 +8,4 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 COPY --from=ghcr.io/erebe/wstunnel /home/app/wstunnel /bin/wstunnel
 WORKDIR /app
 COPY . .
-CMD [ "bash", "entrypoint.bash" ]
+CMD [ "echo", "running" ]
