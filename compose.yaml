@@ -1,5 +1,2 @@
 include:
   - compose.server.yaml
-
-services:
-  

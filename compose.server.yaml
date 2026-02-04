@@ -20,5 +20,5 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - server/Caddyfile:/etc/caddy/Caddyfile
+      - ./server/Caddyfile:/etc/caddy/Caddyfile
     restart: unless-stopped
