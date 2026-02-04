@@ -1,11 +1,6 @@
-https://178.156.236.49:8443 {
-	tls internal
+jakebounds.dev {
 	reverse_proxy server:8000 {
 		header_up Host {host}
 		header_up X-Real-IP {remote_host}
-	}
-	log {
-		output stdout
-		format console
 	}
 }
